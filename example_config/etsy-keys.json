@@ -1,0 +1,12 @@
+{
+  "server": {
+    "protocol": "http",
+    "host": "dummy.com:3000"
+  },
+  "etsy": {
+    "consumer_key": "XXXXXX",
+    "consumer_secret": "XXXXXX",
+    "callback": "/handle_etsy_callback",
+    "scope": ["transactions_r"]
+  }
+}
