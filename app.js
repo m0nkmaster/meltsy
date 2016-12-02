@@ -15,12 +15,14 @@ var exphbs = require('express-handlebars')
 var app = express()
 app.use(cookieSession({secret: 'melty super secret'}))
 app.use(grant)
+app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist/'));
+app.use('/css', express.static(__dirname + '/css'));
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
 app.get('/handle_etsy_callback', function (req, res) {
-  
+
   //Save auth details to session cookie
   req.session.token = req.query.access_token
   req.session.secret = req.query.access_secret
@@ -33,7 +35,7 @@ app.get('/etsy', function (req, res) {
   //.get('oauth/scopes')
   .get('featured_treasuries/listings')
   .oauth({
-      consumer_key: etsyConfig.etsy.consumer_key, 
+      consumer_key: etsyConfig.etsy.consumer_key,
       consumer_secret: etsyConfig.etsy.consumer_secret
     })
   .auth(req.session.token, req.session.secret)
