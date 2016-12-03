@@ -14,17 +14,11 @@ var etsyConfig = require('../config/etsy-keys.json')
 //   next()
 // })
 
-router.get('/handle_callback', function (req, res) {
 
-  //Save auth details to session cookie
-  req.session.token = req.query.access_token
-  req.session.secret = req.query.access_secret
-
-  res.end(JSON.stringify(req.query, null, 2))
-})
 
 router.get('/', function (req, res) {
-  var eReq = etsy
+  var items,
+  eReq = etsy
   //.get('oauth/scopes')
   .get('featured_treasuries/listings')
   .oauth({
@@ -38,17 +32,30 @@ router.get('/', function (req, res) {
     console.log(err)
   })
   .then((result) => {
-
-
-
     // res.render('home', {
     // message: err.message,
     // error: err
     // });
-    console.log(JSON.stringify(result))
+
+    var output = result.pop(); // for some reason the result contain two copies
+    // fs = require('fs');
+    // fs.writeFile('output.json', JSON.stringify(output))
+    // console.log(output.statusCode)
+    items = output.results
+        .filter(function(e){return e.title !== undefined})
   })
-  res.render('index',{message:"dave"});
-  // res.send('Hello, etsy page here.')
+  .then((error, result, body) => {
+        res.render('list',{items:items});
+  })
+})
+
+router.get('/handle_callback', function (req, res) {
+
+  //Save auth details to session cookie
+  req.session.token = req.query.access_token
+  req.session.secret = req.query.access_secret
+
+  res.end(JSON.stringify(req.query, null, 2))
 })
 
 module.exports = router
