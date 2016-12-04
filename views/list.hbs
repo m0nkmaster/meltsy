@@ -1,9 +1,9 @@
-<h1>Items</h1>
+<h1>Your purchases, you are {{user_id}}</h1>
 
 <ul>
 {{#each items}}
     <li>
-        {{title}}
+        {{date}} - {{title}} - {{price}}
     </li>
 {{/each}}
 </ul>

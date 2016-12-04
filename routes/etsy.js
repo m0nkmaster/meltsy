@@ -17,10 +17,18 @@ var etsyConfig = require('../config/etsy-keys.json')
 
 
 router.get('/', function (req, res) {
+
+  console.log(
+      req.session.token, req.session.secret,
+      req.session.token, req.session.secret
+  )
   var items,
+     user_id,
+     datetime
   eReq = etsy
   //.get('oauth/scopes')
-  .get('featured_treasuries/listings')
+  .get('users/m0nkmaster/transactions')
+  // .get('featured_treasuries/listings')
   .oauth({
       consumer_key: etsyConfig.etsy.consumer_key,
       consumer_secret: etsyConfig.etsy.consumer_secret
@@ -38,14 +46,20 @@ router.get('/', function (req, res) {
     // });
 
     var output = result.pop(); // for some reason the result contain two copies
-    // fs = require('fs');
-    // fs.writeFile('output.json', JSON.stringify(output))
+    // console.log(output);
+    fs = require('fs');
+    fs.writeFile('output.json', JSON.stringify(output))
     // console.log(output.statusCode)
     items = output.results
         .filter(function(e){return e.title !== undefined})
+        .map(function(e){
+            e.date = new Date(e.creation_tsz * 1000).toGMTString()
+            return e
+        })
+    user_id = output.params.user_id
   })
   .then((error, result, body) => {
-        res.render('list',{items:items});
+        res.render('list',{items:items, user_id:user_id});
   })
 })
 
