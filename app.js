@@ -21,7 +21,7 @@ app.use('/easypost', easypost)
 
 //homepage
 app.get('/', function(req,res,next) {
-    res.render('index')
+    res.render('home')
 })
 
 //statics

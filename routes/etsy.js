@@ -9,6 +9,7 @@ var etsy = purest({provider: 'etsy', config})
 var etsyConfig = require('../config/etsy-keys.json')
 
 var meltsy = require('../lib/meltsy').meltsy
+var _ = require('lodash')
 
 var path = require('path')
 
@@ -74,10 +75,8 @@ router.get('/item-list', function (req, res, next) {
   meltsy.getUnshipped(req, function(items){
     console.log('Finished gettingUnshipped')
     // console.log(items)
-    // var total = items.reduce(function(a, b) {
-    //   return a.quantity + b.quantity;
-    // }, 0);
-    res.render('items', {items: items, /*total: total*/})
+    var total = _.sumBy(items, 'quantity');
+    res.render('items', {items: items, total: total})
   })
   // res.render('items', {items: items})
 })
