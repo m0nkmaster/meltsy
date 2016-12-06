@@ -70,42 +70,44 @@ router.get('/', function (req, res, next) {
 })
 
 router.get('/item-list', function (req, res, next) {
+  var items
   meltsy.getUnshipped(req, function(items){
-    // console.log('Finished gettingUnshipped')
-    // console.log(items)
+    console.log('Finished gettingUnshipped')
+    console.log(items)
     res.render('items', {items: items})
   })
+  // res.render('items', {items: items})
 })
 
 
 
-router.get('/unshipped-items', function (req, res, next) {
-
-  fs = require('fs');
-  var csv = fs.readFileSync(path.join(__dirname, '../example-files/sales.csv')).toString()
-  var jsonOrders
-  var combinedOrders
-
-  var Converter = require("csvtojson").Converter;
-  var converter = new Converter({});
-  converter.fromString(csv,function(err,result){
-    jsonOrders = result.filter(e => {
-      if (e["Date Posted"] != ""){
-        return true
-      }
-    })
-
-    // jsonOrders.forEach(e => {
-    //   // if (!)
-    //   // combinedOrders[e['Listing ID']['count'] = 1]
-    //   combinedOrders[e['Listing ID'] = e["Item Name"]]
-    // })
-
-
-    fs.writeFile('output.json', JSON.stringify(jsonOrders))
-    res.render('items',{title:"Unshipped items",items:jsonOrders})
-  });
-})
+// router.get('/unshipped-items', function (req, res, next) {
+//
+//   fs = require('fs');
+//   var csv = fs.readFileSync(path.join(__dirname, '../example-files/sales.csv')).toString()
+//   var jsonOrders
+//   var combinedOrders
+//
+//   var Converter = require("csvtojson").Converter;
+//   var converter = new Converter({});
+//   converter.fromString(csv,function(err,result){
+//     jsonOrders = result.filter(e => {
+//       if (e["Date Posted"] != ""){
+//         return true
+//       }
+//     })
+//
+//     // jsonOrders.forEach(e => {
+//     //   // if (!)
+//     //   // combinedOrders[e['Listing ID']['count'] = 1]
+//     //   combinedOrders[e['Listing ID'] = e["Item Name"]]
+//     // })
+//
+//
+//     fs.writeFile('output.json', JSON.stringify(jsonOrders))
+//     res.render('items',{title:"Unshipped items",items:jsonOrders})
+//   });
+// })
 
 router.get('/handle_callback', function (req, res) {
   //Save auth details to session cookie
