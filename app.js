@@ -1,7 +1,6 @@
 var express = require('express')
 var app = express()
 var path = require('path');
-var bodyParser = require('body-parser');
 
 var etsy = require('./routes/etsy')
 var easypost = require('./routes/easypost')
@@ -16,23 +15,19 @@ app.use(grant)
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
-//route
+//routes
 app.use('/etsy', etsy)
 app.use('/easypost', easypost)
 
+//homepage
+app.get('/', function(req,res,next) {
+    res.render('index')
+})
 
-// app.engine('handlebars', exphbs({defaultLayout: 'main'}));
-// app.set('view engine', 'handlebars');
-
+//statics
 app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist/'));
 app.use('/css', express.static(__dirname + '/css'));
 
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: false }));
-
-
-
-
 app.listen(3000, function () {
-  console.log('Express server listening on port ' + 3000)
+  console.log('Meltsy running on port ' + 3000)
 })

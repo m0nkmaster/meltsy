@@ -1,0 +1,13 @@
+<h1>{{title}} items</h1>
+
+<table>
+  <th>Tran</th>
+  <th>ID</th>
+  <th>Quantity</th>
+  <th>Item (Variation)</th>
+{{#each items}}
+    <tr>
+        <td>{{transaction_id}}</td><td>{{listing_id}}</td><td>{{quantity}}</td><td>{{title}}</td>
+    </tr>
+{{/each}}
+</table>
