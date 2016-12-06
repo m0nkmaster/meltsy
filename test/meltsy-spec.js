@@ -10,29 +10,32 @@ var req = {
       }
     }
 
-describe('Meltsy', function() {
-
-  describe('Simple list, all unshipped no variation', function() {
+describe('Meltsy Module', function() {
+  describe('One page, no pagination, no variations', function() {
     beforeEach(function() {
       var scope = nock('https://openapi.etsy.com/v2/shops/MeltingHouse')
         .get('/transactions?limit=100')
         .replyWithFile(200, __dirname + '/data/one-transaction.json')
 
+      var scope2 = nock('https://openapi.etsy.com/v2/shops/MeltingHouse')
+        .get('/transactions?limit=100&page=2&offset=100')
+        .replyWithFile(200, __dirname + '/data/one-transaction-2.json')
+
+      var items = null
     })
 
     it('should return an object with a single element', function() {
       meltsy.getUnshipped(req, function(result){
-        size =  _.size(result)
-        assert.equal(1, size)
+        console.log(result)
+        items = result
       })
+      assert.equal(2, items)
     })
 
-    it('title of items should be correct', function() {
+    xit('title of items should be correct', function() {
       var title = []
       meltsy.getUnshipped(req, function(result){
-      title[0] = result[0].title
 
-      assert.equal('A bag of coal...', title[0])
       })
     })
   })
@@ -41,18 +44,25 @@ describe('Meltsy', function() {
     beforeEach(function() {
       var scope = nock('https://openapi.etsy.com/v2/shops/MeltingHouse')
         .get('/transactions?limit=100')
+        .times(10)
         .replyWithFile(200, __dirname + '/data/one-transaction-variation.json')
+
+      var scope2 = nock('https://openapi.etsy.com/v2/shops/MeltingHouse')
+        .get('/transactions?limit=100&page=2&offset=100')
+        .times(10)
+        .replyWithFile(200, __dirname + '/data/one-transaction-variation.json')
+
 
     })
 
-    it('should return an object with 2 elements', function() {
+    xit('should return an object with 2 elements', function() {
       meltsy.getUnshipped(req, function(result){
         size =  _.size(result)
         assert.equal(2, size)
       })
     })
 
-    it('title of items should be correct', function() {
+    xit('title of items should be correct', function() {
       var title = []
       meltsy.getUnshipped(req, function(result){
 
@@ -70,6 +80,7 @@ describe('Meltsy', function() {
 
       var scope = nock('https://openapi.etsy.com/v2/shops/MeltingHouse')
         .get('/transactions?limit=100')
+        .times(10)
         .reply(404, {error: 'oh heck'})
 
       meltsy.getUnshipped(req, function(result){

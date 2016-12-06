@@ -56,7 +56,7 @@ router.get('/', function (req, res, next) {
 
     // @temp - output response to file
     fs = require('fs');
-    fs.writeFile('output.json', JSON.stringify(result))
+
 
     //set user and items for view
     user_id = output.params.user_id
@@ -73,8 +73,11 @@ router.get('/item-list', function (req, res, next) {
   var items
   meltsy.getUnshipped(req, function(items){
     console.log('Finished gettingUnshipped')
-    console.log(items)
-    res.render('items', {items: items})
+    // console.log(items)
+    // var total = items.reduce(function(a, b) {
+    //   return a.quantity + b.quantity;
+    // }, 0);
+    res.render('items', {items: items, /*total: total*/})
   })
   // res.render('items', {items: items})
 })
