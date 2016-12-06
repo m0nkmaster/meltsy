@@ -103,7 +103,7 @@ router.get('/', function (req, res) {
   //         res.send("Here is your shipping label: <a href=\"" + shipment.postage_label.label_url + "\">Label!!!</a>")
   //     });
   // });
-  res.render('index',{message:"dave"});
+  res.render('home',{message:"wip"});
 })
 
 module.exports = router
