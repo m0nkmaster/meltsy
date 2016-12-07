@@ -10,13 +10,13 @@ router.get('/', function (req, res, next) {
 })
 
 router.get('/item-list', function (req, res, next) {
-  var items
+
   meltsy.getUnshipped(req, function(items){
     console.log('Finished gettingUnshipped')
-    // console.log(items)
     var total = _.sumBy(items, 'quantity');
     res.render('items', {items: items, total: total})
   })
+
 })
 
 router.get('/handle_callback', function (req, res) {

@@ -11,22 +11,18 @@ var req = {
     }
 
 describe('Meltsy Module', function() {
-  describe('One page, no pagination, no variations', function() {
+  describe('No pagination', function() {
     beforeEach(function() {
       var scope = nock('https://openapi.etsy.com/v2/shops/MeltingHouse')
         .get('/transactions?limit=100')
-        .replyWithFile(200, __dirname + '/data/one-transaction.json')
-
-      var scope2 = nock('https://openapi.etsy.com/v2/shops/MeltingHouse')
-        .get('/transactions?limit=100&page=2&offset=100')
-        .replyWithFile(200, __dirname + '/data/one-transaction-2.json')
+        .replyWithFile(200, __dirname + '/data/single-page.json')
 
       var items = null
     })
 
     it('should return an object with a single element', function() {
       meltsy.getUnshipped(req, function(result){
-        console.log(result)
+        // console.log(result)
         items = result
       })
       assert.equal(2, items)
