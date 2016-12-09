@@ -52,7 +52,7 @@ You have **338** unshipped items - 08/12/16 (19:30)
 
 <td>24</td>
 
-<td>Santa&'s Chocolate Coal</td>
+<td>Santa's Chocolate Coal</td>
 
 </tr>
 
