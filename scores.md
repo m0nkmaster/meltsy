@@ -8,7 +8,7 @@ You have **338** unshipped items
 
 <th>Quantity</th>
 
-<th>Item _(variation)_</th>
+<th>Item (variation)</th>
 
 </tr>
 
