@@ -1,4 +1,4 @@
-You have **338** unshipped items
+You have **338** unshipped items - 08/12/16 (19:30)
 
 <table class="table table-striped">
 
@@ -20,7 +20,7 @@ You have **338** unshipped items
 
 <td>64</td>
 
-<td>Two hot chocolate spoons with marshmallows | Various flavours | Stocking filler | Secret Santa | Christmas Gift (milk chocolate)</td>
+<td>Two hot chocolate spoons with marshmallows (milk chocolate)</td>
 
 </tr>
 
@@ -28,7 +28,7 @@ You have **338** unshipped items
 
 <td>64</td>
 
-<td>Chocolate Sprouts stocking filler - novelty secret Santa gift - handmade chocolate (Milk choc filling)</td>
+<td>Chocolate Sprouts stocking filler (Milk choc filling)</td>
 
 </tr>
 
@@ -36,7 +36,7 @@ You have **338** unshipped items
 
 <td>32</td>
 
-<td>Two hot chocolate spoons with marshmallows | Various flavours | Stocking filler | Secret Santa | Christmas Gift (salted caramel)</td>
+<td>Two hot chocolate spoons with marshmallow (salted caramel)</td>
 
 </tr>
 
@@ -44,7 +44,7 @@ You have **338** unshipped items
 
 <td>31</td>
 
-<td>Two hot chocolate spoons with marshmallows | Various flavours | Stocking filler | Secret Santa | Christmas Gift (gingerbread)</td>
+<td>Two hot chocolate spoons with marshmallow (gingerbread)</td>
 
 </tr>
 
@@ -52,7 +52,7 @@ You have **338** unshipped items
 
 <td>24</td>
 
-<td>Santa&#39;s Chocolate Coal - Christmas Stocking Filler or Secret Santa | Naughty or Nice Gift | Kids Present</td>
+<td>Santa&'s Chocolate Coal</td>
 
 </tr>
 
@@ -60,7 +60,7 @@ You have **338** unshipped items
 
 <td>11</td>
 
-<td>Two hot chocolate spoons with marshmallows | Various flavours | Stocking filler | Secret Santa | Christmas Gift (mint)</td>
+<td>Two hot chocolate spoons with marshmallow (mint)</td>
 
 </tr>
 
@@ -68,7 +68,7 @@ You have **338** unshipped items
 
 <td>10</td>
 
-<td>Two hot chocolate spoons with marshmallows | Various flavours | Stocking filler | Secret Santa | Christmas Gift (orange)</td>
+<td>Two hot chocolate spoons with marshmallow (orange)</td>
 
 </tr>
 
@@ -76,7 +76,7 @@ You have **338** unshipped items
 
 <td>8</td>
 
-<td>Chocolate Sprouts stocking filler - novelty secret Santa gift - handmade chocolate (White choc filling)</td>
+<td>Chocolate Sprouts stocking filler  (White choc filling)</td>
 
 </tr>
 
@@ -84,7 +84,7 @@ You have **338** unshipped items
 
 <td>8</td>
 
-<td>Two hot chocolate spoons with marshmallows | Various flavours | Stocking filler | Secret Santa | Christmas Gift (white chocolate)</td>
+<td>Two hot chocolate spoons with marshmallow (white chocolate)</td>
 
 </tr>
 
@@ -108,7 +108,7 @@ You have **338** unshipped items
 
 <td>6</td>
 
-<td>Two hot chocolate spoons with marshmallows | Various flavours | Stocking filler | Secret Santa | Christmas Gift (white chocolate )</td>
+<td>Two hot chocolate spoons with marshmallow (white chocolate )</td>
 
 </tr>
 
@@ -140,7 +140,7 @@ You have **338** unshipped items
 
 <td>3</td>
 
-<td>Christmas Pudding Chocolate Truffles | Handmade chocolates with festive fruity flavour | Mini Christmas puds!</td>
+<td>Christmas Pudding Chocolate Truffles</td>
 
 </tr>
 
