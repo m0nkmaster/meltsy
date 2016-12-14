@@ -1,4 +1,4 @@
-You have **318** unshipped items - 08/12/16 (20:46)
+You have **61** unshipped items - 14/12/16 (16:40)
 
 <table class="table table-striped">
 
@@ -352,78 +352,83 @@ You have **318** unshipped items - 08/12/16 (20:46)
 
 </tr>
 
-<tr>
-
-<td>1</td>
-
-<td>Night Before Christmas Kit | Christmas Eve Gift Bag (2 people)</td>
-
-</tr>
-
-<tr>
-
-<td>1</td>
-
-<td>Hot Chocolate Christmas Gift Hamper for Two (Salted Caramel)</td>
-
-</tr>
-
-<tr>
-
-<td>1</td>
-
-<td>Hot Chocolate Christmas Gift Hamper for Two (Chocolate sprouts)</td>
-
-</tr>
-
-<tr>
-
-<td>1</td>
-
-<td>Hot Chocolate Christmas Gift Hamper for Two (Milk chocolate)</td>
-
-</tr>
-
-<tr>
-
-<td>1</td>
-
-<td>Hot Chocolate Christmas Gift Hamper for Two (Xmas pud truffles)</td>
-
-</tr>
-
-<tr>
-
-<td>1</td>
-
-<td>Personalised Christmas Hot Chocolate Mix | Customise the name on the label (Salted caramel)</td>
-
-</tr>
-
-<tr>
-
-<td>1</td>
-
-<td>Personalised Christmas Hot Chocolate Mix | Customise the name on the label (Gingerbread)</td>
-
-</tr>
-
-<tr>
-
-<td>1</td>
-
-<td>Christmas Chocolate Shards | Decorated Chocolate | Star Chocolate | Chocolate with Print (Milk chocolate)</td>
-
-</tr>
-
-<tr>
-
-<td>1</td>
-
-<td>Hot Chocolate Mix | Gourmet Drinking Chocolate | Cocoa gift | Handmade | Choose your flavour | (Dark Chocolate)</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<table class="table table-striped">
+        <thead>
+          <tr><th>Quantity</th>
+          <th>Item <i>(variation)</i></th>
+        </tr></thead>
+        <tbody>
+              <tr>
+                  <td>14</td><td>Two hot chocolate spoons with marshmallows | Various flavours | Stocking filler | Secret Santa | Christmas Gift (milk chocolate)</td>
+              </tr>
+              <tr>
+                  <td>7</td><td>Two hot chocolate spoons with marshmallows | Various flavours | Stocking filler | Secret Santa | Christmas Gift (gingerbread)</td>
+              </tr>
+              <tr>
+                  <td>6</td><td>Chocolate Sprouts stocking filler - novelty secret Santa gift - handmade chocolate (Milk choc filling)</td>
+              </tr>
+              <tr>
+                  <td>5</td><td>Santa&amp;#39;s Chocolate Coal - Christmas Stocking Filler or Secret Santa | Naughty or Nice Gift | Kids Present</td>
+              </tr>
+              <tr>
+                  <td>3</td><td>Praline Chocolate Sprouts | Truffles Gift Box</td>
+              </tr>
+              <tr>
+                  <td>3</td><td>Two hot chocolate spoons with marshmallows | Various flavours | Stocking filler | Secret Santa | Christmas Gift (salted caramel)</td>
+              </tr>
+              <tr>
+                  <td>2</td><td>Night Before Christmas Kit | Christmas Eve Gift Bag (Salted caramel)</td>
+              </tr>
+              <tr>
+                  <td>2</td><td>Two hot chocolate spoons with marshmallows | Various flavours | Stocking filler | Secret Santa | Christmas Gift (mint)</td>
+              </tr>
+              <tr>
+                  <td>2</td><td>Two hot chocolate spoons with marshmallows | Various flavours | Stocking filler | Secret Santa | Christmas Gift (white chocolate )</td>
+              </tr>
+              <tr>
+                  <td>2</td><td>Two hot chocolate spoons with marshmallows | Various flavours | Stocking filler | Secret Santa | Christmas Gift (orange)</td>
+              </tr>
+              <tr>
+                  <td>2</td><td>Night Before Christmas Kit | Christmas Eve Gift Bag (4 people)</td>
+              </tr>
+              <tr>
+                  <td>1</td><td>Peppermint Candy Cane Chocolate Slab Bar</td>
+              </tr>
+              <tr>
+                  <td>1</td><td>Shipping upgrade - Abby</td>
+              </tr>
+              <tr>
+                  <td>1</td><td>Choose Four Flavours | Chocolate Shards Selection | 4 x Chocolate Bark Set</td>
+              </tr>
+              <tr>
+                  <td>1</td><td>Choose 3 flavours | Gourmet Hot Chocolate Mix | Drinking Chocolate | Handmade</td>
+              </tr>
+              <tr>
+                  <td>1</td><td>Jar of Christmas Chocolate Buttons | Rudolph the Reindeer Treats | Stocking filler</td>
+              </tr>
+              <tr>
+                  <td>1</td><td>Sprout Hater Chocolate Gift Bar | Stocking filler</td>
+              </tr>
+              <tr>
+                  <td>1</td><td>Night Before Christmas Kit | Christmas Eve Gift Bag (5 people)</td>
+              </tr>
+              <tr>
+                  <td>1</td><td>Christmas Eve Gift - Personalised Hot Chocolate Spoon | Add a name to the label | (Orange)</td>
+              </tr>
+              <tr>
+                  <td>1</td><td>Christmas Eve Gift - Personalised Hot Chocolate Spoon | Add a name to the label | (Gingerbread)</td>
+              </tr>
+              <tr>
+                  <td>1</td><td>Christmas Eve Gift - Personalised Hot Chocolate Spoon | Add a name to the label | (Milk chocolate)</td>
+              </tr>
+              <tr>
+                  <td>1</td><td>Chocolate Sprouts stocking filler - novelty secret Santa gift - handmade chocolate (White choc filling)</td>
+              </tr>
+              <tr>
+                  <td>1</td><td>Night Before Christmas Kit | Christmas Eve Gift Bag (Gingerbread)</td>
+              </tr>
+              <tr>
+                  <td>1</td><td>Christmas Chocolate Shards |  Decorated Chocolate  |  Star Chocolate  |  Chocolate with Print (Dark chocolate)</td>
+              </tr>
+        </tbody>
+      </table>
